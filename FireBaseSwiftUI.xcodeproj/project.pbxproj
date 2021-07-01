@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0288B652AB6C6C41A39AC3B7 /* Pods_FireBaseSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3881EEEAAD9C5A15B0B1A338 /* Pods_FireBaseSwiftUI.framework */; };
 		8414D945268DFF6700457135 /* FireBaseSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414D944268DFF6700457135 /* FireBaseSwiftUIApp.swift */; };
 		8414D947268DFF6700457135 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414D946268DFF6700457135 /* ContentView.swift */; };
 		8414D949268DFF6900457135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414D948268DFF6900457135 /* Assets.xcassets */; };
 		8414D94C268DFF6900457135 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414D94B268DFF6900457135 /* Preview Assets.xcassets */; };
+		8414D954268E039A00457135 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414D953268E039A00457135 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3881EEEAAD9C5A15B0B1A338 /* Pods_FireBaseSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414D941268DFF6700457135 /* FireBaseSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414D944268DFF6700457135 /* FireBaseSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseSwiftUIApp.swift; sourceTree = "<group>"; };
 		8414D946268DFF6700457135 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8414D948268DFF6900457135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8414D94B268DFF6900457135 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8414D94D268DFF6900457135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8414D953268E039A00457135 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D85BDBB1BBFBDBD62F16890E /* Pods-FireBaseSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-FireBaseSwiftUI/Pods-FireBaseSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		DC5F274DF6214A05319EEBCF /* Pods-FireBaseSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-FireBaseSwiftUI/Pods-FireBaseSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0288B652AB6C6C41A39AC3B7 /* Pods_FireBaseSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BA92509441781C1183C7D8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC5F274DF6214A05319EEBCF /* Pods-FireBaseSwiftUI.debug.xcconfig */,
+				D85BDBB1BBFBDBD62F16890E /* Pods-FireBaseSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		82AA8029C9FAD5AE57672B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3881EEEAAD9C5A15B0B1A338 /* Pods_FireBaseSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8414D938268DFF6700457135 = {
 			isa = PBXGroup;
 			children = (
 				8414D943268DFF6700457135 /* FireBaseSwiftUI */,
 				8414D942268DFF6700457135 /* Products */,
+				4BA92509441781C1183C7D8E /* Pods */,
+				82AA8029C9FAD5AE57672B38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +83,7 @@
 				8414D946268DFF6700457135 /* ContentView.swift */,
 				8414D948268DFF6900457135 /* Assets.xcassets */,
 				8414D94D268DFF6900457135 /* Info.plist */,
+				8414D953268E039A00457135 /* GoogleService-Info.plist */,
 				8414D94A268DFF6900457135 /* Preview Content */,
 			);
 			path = FireBaseSwiftUI;
@@ -76,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8414D950268DFF6900457135 /* Build configuration list for PBXNativeTarget "FireBaseSwiftUI" */;
 			buildPhases = (
+				7D191CC047841C100A130BB6 /* [CP] Check Pods Manifest.lock */,
 				8414D93D268DFF6700457135 /* Sources */,
 				8414D93E268DFF6700457135 /* Frameworks */,
 				8414D93F268DFF6700457135 /* Resources */,
+				7114FAC5BB9B5F11C3E77A93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +158,53 @@
 			files = (
 				8414D94C268DFF6900457135 /* Preview Assets.xcassets in Resources */,
 				8414D949268DFF6900457135 /* Assets.xcassets in Resources */,
+				8414D954268E039A00457135 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7114FAC5BB9B5F11C3E77A93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FireBaseSwiftUI/Pods-FireBaseSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FireBaseSwiftUI/Pods-FireBaseSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FireBaseSwiftUI/Pods-FireBaseSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D191CC047841C100A130BB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireBaseSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8414D93D268DFF6700457135 /* Sources */ = {
@@ -264,6 +337,7 @@
 		};
 		8414D951268DFF6900457135 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC5F274DF6214A05319EEBCF /* Pods-FireBaseSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +360,7 @@
 		};
 		8414D952268DFF6900457135 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85BDBB1BBFBDBD62F16890E /* Pods-FireBaseSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
